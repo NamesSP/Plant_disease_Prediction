@@ -2,6 +2,7 @@ import streamlit as st
 import cv2
 import tensorflow as tf
 import numpy as np
+import os
 
 # # Load the machine learning model
 # model = tf.keras.models.load_model('cat_dog_classifier.h5')
@@ -32,7 +33,7 @@ def preprocess_image(img):
 def predict_class(img) :
 
     # Make predictions using the loaded model
-    model = tf.saved_model.load(".\\archive\\")
+    model = tf.saved_model.load(os.path.join(os.getcwd(),"archive"))
     predictions = model(tf.constant([img]))
     predicted_class = tf.argmax(predictions, axis=1)
     res= predicted_class[0].numpy()
