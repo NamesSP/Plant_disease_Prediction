@@ -32,7 +32,7 @@ def preprocess_image(img):
 def predict_class(img) :
 
     # Make predictions using the loaded model
-    model = tf.saved_model.load("C:\\Users\\91886\\Desktop\\SIH proj\\archive\\")
+    model = tf.saved_model.load(".\\archive\\")
     predictions = model(tf.constant([img]))
     predicted_class = tf.argmax(predictions, axis=1)
     res= predicted_class[0].numpy()
