@@ -2,7 +2,7 @@
 # import openai
 
 # # Set OpenAI API key
-# openai.api_key = "sk-proj-5MKgWiMEoP5n6if2xDxVT3BlbkFJPjaV5wyy4kFAfLU0qlsn"
+# openai_api_key = ""
 
 # # Define function to interact with OpenAI's chat model
 # def chatbot(prompt):

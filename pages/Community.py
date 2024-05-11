@@ -2,11 +2,11 @@ import streamlit as st
 import praw
 
 # Initialize Reddit API
-reddit = praw.Reddit(
-    client_id="R5fQ44ayTqtWrr0M1VNHaQ",
-    client_secret="Hcdlgsp0MRsDdyixk0nnTLgo9mRFig",
-    user_agent="YOUR_USER_AGENT"
-)
+# reddit = praw.Reddit(
+#     client_id="R5fQ44ayTqtWrr0M1VNHaQ",
+#     client_secret="Hcdlgsp0MRsDdyixk0nnTLgo9mRFig",
+#     user_agent="YOUR_USER_AGENT"
+# )
 
 # Define a function to fetch and display Reddit posts
 def display_reddit_posts(subreddit_name, num_posts):
