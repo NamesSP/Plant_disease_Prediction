@@ -1,0 +1,168 @@
+import math
+
+# 1. ceil(x): Smallest integer greater than or equal to x
+# Example: ceil of 3.14 is 4
+print("ceil(3.14):", math.ceil(3.14))
+
+# 2. floor(x): Largest integer less than or equal to x
+# Example: floor of 5.99 is 5
+print("floor(5.99):", math.floor(5.99))
+
+# 3. trunc(x): Truncate the decimal and keep the integer part only
+# Example: trunc(-2.75) becomes -2
+print("trunc(-2.75):", math.trunc(-2.75))
+
+# 4. fabs(x): Absolute value of x as a float
+# Example: fabs(-91) is 91.0
+print("fabs(-91):", math.fabs(-91))
+
+# 5. factorial(x): Product of all positive integers up to x
+# Example: factorial(6) is 720
+print("factorial(6):", math.factorial(6))
+
+# 6. fmod(x, y): Remainder of x divided by y (float result)
+# Example: fmod(20, 7) is 6.0
+print("fmod(20, 7):", math.fmod(20, 7))
+
+# 7. copysign(x, y): Return x with the sign of y
+# Example: copysign(7, -2) returns -7.0
+print("copysign(7, -2):", math.copysign(7, -2))
+
+# 8. pow(x, y): x raised to the power y (as float)
+# Example: pow(3, 4) is 81.0
+print("pow(3, 4):", math.pow(3, 4))
+
+# 9. exp(x): e (Euler's number) raised to the power x
+# Example: exp(3) is roughly 20.085
+print("exp(3):", math.exp(3))
+
+# 10. log(x): Natural logarithm (base e) of x
+# Example: log(2.718281828) is about 1
+print("log(2.718281828):", math.log(2.718281828))
+
+# 11. log(x, base): Logarithm of x to a given base
+# Example: log(16, 2) is 4.0
+print("log(16, 2):", math.log(16, 2))
+
+# 12. log10(x): Logarithm base 10
+# Example: log10(100) is 2.0
+print("log10(100):", math.log10(100))
+
+# 13. sqrt(x): Square root of x
+# Example: sqrt(81) is 9.0
+print("sqrt(81):", math.sqrt(81))
+
+# 14. sin(x): Sine of x (x in radians)
+# Example: sin(0) is 0.0
+print("sin(0):", math.sin(0))
+
+# 15. cos(x): Cosine of x (x in radians)
+# Example: cos(pi) is -1.0
+print("cos(math.pi):", math.cos(math.pi))
+
+# 16. tan(x): Tangent of x (x in radians)
+# Example: tan(math.pi/3) is about 1.732
+print("tan(math.pi/3):", math.tan(math.pi/3))
+
+# 17. degrees(x): Convert radians to degrees
+# Example: 1 radian is about 57.2958 degrees
+print("degrees(1):", math.degrees(1))
+
+# 18. radians(x): Convert degrees to radians
+# Example: 90 degrees is pi/2 radians
+print("radians(90):", math.radians(90))
+
+# 19. hypot(x, y): Euclidean norm sqrt(x*x + y*y)
+# Example: hypot(5, 12) is 13.0
+print("hypot(5, 12):", math.hypot(5, 12))
+
+# 20. isfinite(x): Checks if x is neither infinity nor NaN
+# Example: isfinite(100.5) is True
+print("isfinite(100.5):", math.isfinite(100.5))
+
+# 21. isinf(x): Checks if x is infinite
+# Example: isinf(float('-inf')) is True
+print("isinf(float('-inf')):", math.isinf(float('-inf')))
+
+# 22. isnan(x): Checks if x is not a number (NaN)
+# Example: isnan(float('nan')) is True
+print("isnan(float('nan')):", math.isnan(float('nan')))
+
+# 23. gcd(x, y): Greatest Common Divisor of x and y
+# Example: gcd(54, 24) is 6
+print("gcd(54, 24):", math.gcd(54, 24))
+
+# 24. modf(x): Returns (fractional part, integer part) as a tuple
+# Example: modf(5.67) is (0.67, 5.0)
+print("modf(5.67):", math.modf(5.67))
+
+# 25. frexp(x): Decomposes x into mantissa and exponent
+# Example: frexp(32.0) gives (0.5, 6)
+print("frexp(32.0):", math.frexp(32.0))
+
+# 26. ldexp(x, i): x * (2**i)
+# Example: ldexp(0.5, 4) is 8.0
+print("ldexp(0.5, 4):", math.ldexp(0.5, 4))
+
+# 27. fsum(iterable): Accurate floating point sum of values in iterable
+# Example: fsum([0.3, 0.3, 0.3]) is 0.8999999999999999
+print("fsum([0.3, 0.3, 0.3]):", math.fsum([0.3, 0.3, 0.3]))
+
+# 28. atan2(y, x): Arc tangent of y/x considering sign
+# Example: atan2(4, 3) gives angle (in radians)
+print("atan2(4, 3):", math.atan2(4, 3))
+
+# 29. erf(x): Error function at x
+# Example: erf(0.5) is about 0.5205
+print("erf(0.5):", math.erf(0.5))
+
+# 30. erfc(x): Complementary error function (1 - erf(x))
+# Example: erfc(0.5) is about 0.4795
+print("erfc(0.5):", math.erfc(0.5))
+
+# 31. gamma(x): Gamma function at x (generalization of factorial)
+# Example: gamma(6) is 120.0
+print("gamma(6):", math.gamma(6))
+
+# 32. lgamma(x): Natural log of the gamma function at x
+# Example: lgamma(6) is about 4.787
+print("lgamma(6):", math.lgamma(6))
+
+# 33. sinh(x): Hyperbolic sine of x
+# Example: sinh(2) is about 3.6269
+print("sinh(2):", math.sinh(2))
+
+# 34. cosh(x): Hyperbolic cosine of x
+# Example: cosh(0) is 1.0
+print("cosh(0):", math.cosh(0))
+
+# 35. tanh(x): Hyperbolic tangent of x
+# Example: tanh(1) is about 0.7616
+print("tanh(1):", math.tanh(1))
+
+# 36. asinh(x): Inverse hyperbolic sine
+# Example: asinh(2) is about 1.4436
+print("asinh(2):", math.asinh(2))
+
+# 37. acosh(x): Inverse hyperbolic cosine
+# Example: acosh(4) is about 2.0634
+print("acosh(4):", math.acosh(4))
+
+# 38. atanh(x): Inverse hyperbolic tangent
+# Example: atanh(0.7) is about 0.8673
+print("atanh(0.7):", math.atanh(0.7))
+
+# 39. pi: The mathematical constant π
+print("pi:", math.pi)
+
+# 40. e: The mathematical constant e (Euler's number)
+print("e:", math.e)
+
+# 41. tau: The mathematical constant τ (2 pi)
+print("tau:", math.tau)
+
+# 42. nan: Not a Number (NaN) constant
+print("nan:", math.nan)
+
+# 43. inf: Infinity constant
+print("inf:", math.inf)
